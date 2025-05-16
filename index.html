@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factura Proforma</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="contenedor-factura">
+    
+    <!-- numero de factura-->
+     <table class="numero_factura">
+      <tr>
+        <td><strong>Numero de Factura:</strong> 001-002-000086545</td>
+      </tr>
+
+    <!-- Datos de la empresa -->
+    <table class="empresa">
+      <tr>
+        <td><strong>Nombre:</strong> Comercial VY S.A.</td>
+        <td><strong>RUC:</strong> 1234567890001</td>
+      </tr>
+      <tr>
+        <td><strong>Dirección:</strong> Calle 10 y Av. Central</td>
+        <td><strong>Contacto:</strong> 0999999999 / infovy.com</td>
+      </tr>
+    </table>
+
+    <!-- Datos del cliente -->
+    <table class="cliente">
+      <tr>
+        <td><strong>Cliente:</strong> Juan Pérez</td>
+        <td><strong>Cédula/RUC:</strong> 0102030405</td>
+      </tr>
+      <tr>
+        <td><strong>Dirección:</strong> Av. Libertad 123</td>
+        <td><strong>Contacto:</strong> 0987654321 / juan@example.com</td>
+      </tr>
+    </table>
+
+    <!-- Listado de productos -->
+    <table class="productos">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Descripción</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Monitor LED 24"</td>
+          <td>2</td>
+          <td>$120.00</td>
+          <td>$240.00</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Teclado Inalámbrico</td>
+          <td>1</td>
+          <td>$25.00</td>
+          <td>$25.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="total-label">Subtotal</td>
+          <td>$265.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="total-label">IVA (15%)</td>
+          <td>$39.75</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="total-label"><strong>Total con IVA</strong></td>
+          <td><strong>$304.75</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Información adicional -->
+    <table class="info">
+      <tr>
+        <td><strong>Forma de Pago:</strong> Transferencia Bancaria</td>
+      </tr>
+      <tr>
+        <td><strong>Observaciones:</strong> Entrega inmediata</td>
+      </tr>
+      <tr>
+        <td class="pie">Gracias por su compra – www.comercialvy.com</td>
+      </tr>
+    </table>
+
+  </div>
+</body>
+</html>
